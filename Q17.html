@@ -1,0 +1,37 @@
+<script>
+
+
+let numeros = new Array(6);
+let pares = [];
+let impares = [];
+
+
+for (let i = 0; i < numeros.length; i++) {
+    numeros[i] = parseInt(prompt(`Digite o ${i+1}º número inteiro:`));
+    
+
+    if (numeros[i] % 2 === 0) {
+        pares.push(numeros[i]);
+    } else {
+        impares.push(numeros[i]);
+    }
+}
+
+// Exibe os resultados
+console.log("=== Resultados ===");
+console.log("a) Números pares:", pares.join(', '));
+console.log("b) Quantidade de pares:", pares.length);
+console.log("c) Números ímpares:", impares.join(', '));
+console.log("d) Quantidade de ímpares:", impares.length);
+
+
+
+
+
+
+
+
+
+
+
+</script>

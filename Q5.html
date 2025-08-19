@@ -1,0 +1,18 @@
+<script>
+
+let numeros = new Array(5);
+for (let i = 0; i < numeros.length; i++) {
+    numeros[i] = parseInt(prompt(`Digite o ${i+1}º número inteiro:`));
+}
+
+console.log("Números ímpares no vetor:");
+for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] % 2 !== 0) {
+        console.log(numeros[i]);
+    }
+}
+
+
+
+
+</script>

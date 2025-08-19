@@ -1,0 +1,34 @@
+<script>
+let vetor = new Array(8);
+
+let posicaoNegativo = -1;
+
+for (let i = 0; i < vetor.length; i++) {
+    vetor[i] = parseInt(prompt("Digite o " + (i + 1) + "º número:"));
+
+    if (vetor[i] < 0 && posicaoNegativo === -1) {
+        posicaoNegativo = i; 
+    }
+    
+}
+
+console.log("Vetor digitado: " + vetor);
+if (posicaoNegativo !== -1) {
+    console.log("Primeiro número negativo encontrado na posição: " + posicaoNegativo);
+} else {
+    console.log("Nenhum número negativo foi encontrado no vetor.");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
